@@ -1,0 +1,33 @@
+.map_cart_Div {
+  border: 2px solid #333;
+  border-radius: 8px;
+  display: flex;
+  /* flex-wrap: wrap; */
+  padding: 2rem;
+  margin: 1rem 3rem;
+  width: 50%;
+  /* max-width: 100%; */
+  /* display: inline; */
+}
+
+#img-product {
+  /* padding: 2px; */
+  margin-left: 2px;
+  /* overflow: hidden; */
+  border-radius: 4px;
+}
+.img-div {
+  margin-right: 4px;
+}
+.decri-div {
+  margin-left: 4rem;
+}
+
+.btn-div {
+  margin-top: 1rem;
+  margin-left: 10rem;
+}
+
+.btn-div button {
+  margin: 2px;
+}

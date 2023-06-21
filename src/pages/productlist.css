@@ -1,0 +1,10 @@
+#shope-heading {
+  text-align: center;
+  font-style: italic;
+  text-decoration: underline solid #333;
+  padding: 8px;
+}
+#shope-logo {
+  color: #333;
+  margin-right: 4px;
+}
