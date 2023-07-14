@@ -33,10 +33,10 @@
 
 #Nav-content {
   position: relative;
-  animation: navAni 1s;
+  /* animation: navAni 1s; */
 }
 
-.Nav-content {
+/* .Nav-content {
   animation-timing-function: linear;
 }
 
@@ -47,7 +47,7 @@
   to {
     right: 15px;
   }
-}
+} */
 
 /* .logo-name {
   text-align: left;
@@ -60,9 +60,9 @@
   /* text-decoration: underline solid white; */
   padding: 8px;
   /* animation-name: word; */
-  animation-name: word;
-  animation-duration: 4s;
-  margin-right: 70%;
+  /* animation-name: word; */
+  /* animation-duration: 4s; */
+  /* margin-right: 70%; */
 }
 
 @keyframes word {
@@ -86,10 +86,10 @@
 #shope-heading #shope-logo {
   color: whitesmoke;
   margin-right: 4px;
-  animation-name: example;
+  /* animation-name: example; */
   position: relative;
-  animation-duration: 6s;
-  animation-delay: -2s;
+  /* animation-duration: 6s; */
+  /* animation-delay: -2s; */
 }
 
 @keyframes example {

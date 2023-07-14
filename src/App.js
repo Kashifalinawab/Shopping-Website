@@ -7,6 +7,7 @@ import "./style.css";
 const App = () => {
   return (
     <div>
+      <div>Dark Mode </div>
       <NavBar />
       <Routing />
       {/* <div className="footer-div"> */}

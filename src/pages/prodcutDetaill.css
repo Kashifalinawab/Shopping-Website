@@ -13,6 +13,7 @@
   border: 2px black double;
   border-radius: 5px;
   display: inline-block;
+  cursor: pointer;
 }
 
 #gallary-img {

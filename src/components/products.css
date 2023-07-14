@@ -8,6 +8,7 @@
   width: 12rem;
   height: 14rem;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .product-card {
@@ -60,4 +61,33 @@
   font-size: 1rem;
   font-weight: bold;
   color: chocolate;
+}
+
+.pagenation {
+  padding: 10px;
+  margin: 20px, 0;
+  display: flex;
+  justify-content: center;
+}
+
+.pagenation > span {
+  padding: 15px 20px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.selected__span {
+  background-color: gray;
+}
+
+.left__span {
+  display: none;
+}
+
+.right__span {
+  display: none;
+}
+
+.pagenation__disable {
+  opacity: 0;
 }

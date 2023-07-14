@@ -7,8 +7,11 @@ const ProductList = ({
   productList,
   setCart,
   cart,
-
   setPriceState,
+  page,
+  setPage,
+  totalPage,
+  setTotalPage,
 }) => {
   // console.log(setCart);
   return (
@@ -18,6 +21,10 @@ const ProductList = ({
         setCart={setCart}
         cart={cart}
         setPriceState={setPriceState}
+        page={page}
+        setPage={setPage}
+        totalPage={totalPage}
+        setTotalPage={setTotalPage}
       />
     </div>
   );

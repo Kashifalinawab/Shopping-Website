@@ -11,11 +11,31 @@ const Routing = () => {
   const [productList, setproductList] = useState([]);
   const [cart, setCart] = useState([]);
   const [priceState, setPriceState] = useState(Number);
+  const [page, setPage] = useState(1);
+  const [totalPage, setTotalPage] = useState(0);
+
+  const fetcherFun = async () => {
+    const resp = await fetch(
+      `https://dummyjson.com/products?limit=10&skip=${page * 10 - 10}`
+    );
+    const data = await resp.json();
+    if (data && data.products) {
+      setproductList(data.products);
+      setTotalPage(data.total / 10);
+    }
+  };
+
   useEffect(() => {
-    fetch("https://dummyjson.com/products")
-      .then((resp) => resp.json())
-      .then((rsp) => setproductList(rsp.products));
-  }, []);
+    fetcherFun();
+  }, [page]);
+
+  // useEffect(() => {
+  //   fetch("https://dummyjson.com/products?limit=100")
+  //     .then((resp) => resp.json())
+  //     .then((rsp) => setproductList(rsp.products))
+  // }, []);
+
+  console.log(totalPage);
 
   return (
     <div>
@@ -29,6 +49,10 @@ const Routing = () => {
               cart={cart}
               priceState={priceState}
               setPriceState={setPriceState}
+              page={page}
+              setPage={setPage}
+              totalPage={totalPage}
+              setTotalPage={setTotalPage}
             />
           }
         />
